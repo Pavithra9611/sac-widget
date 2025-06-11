@@ -1,9 +1,5 @@
-class IncidentChart extends HTMLElement {
+customElements.define('incident-chart', class extends HTMLElement {
   connectedCallback() {
-    this.innerHTML = `<div style="font-family: Arial, sans-serif; padding: 10px; color: #333;">
-      Custom Widget Loaded Successfully!
-    </div>`;
+    this.innerHTML = 'Hello from widget!';
   }
-}
-
-customElements.define('incident-chart', IncidentChart);
+});
